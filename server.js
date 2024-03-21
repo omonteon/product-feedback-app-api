@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import productFeedback from "./routes/product-feedback.js";
+import productFeedback from "./src/routes/product-feedback.js";
 
 const PORT = process.env.PORT || 5050;
 const app = express();
