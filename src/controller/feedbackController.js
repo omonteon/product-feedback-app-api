@@ -17,7 +17,6 @@ async function listByIdEndpoint(req, res) {
   try {
     const { id } = req?.params;
     result = await listByIdUseCase(id);
-    console.log("result", result);
   } catch (e) {
     console.log(e);
     res.send({ error: e }).status(500);
