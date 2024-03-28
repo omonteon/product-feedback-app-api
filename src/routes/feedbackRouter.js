@@ -1,8 +1,12 @@
 import express from "express";
-import { listAllEndpoint } from "../controller/feedbackController.js";
+import {
+  listAllEndpoint,
+  listByIdEndpoint,
+} from "../controller/feedbackController.js";
 
 const router = express.Router();
 
-router.get("/", listAllEndpoint)
+router.get("/", listAllEndpoint);
+router.get("/:id", listByIdEndpoint);
 
 export default router;
